@@ -6,7 +6,7 @@ The Android framework provides a lot of flexibility in deciding how to organize 
 
 The Android Architecture Blueprints project demonstrates strategies to help solve or avoid these common problems. This project implements the same app using different architectural concepts and tools.
 
-You can use the samples in this project as a learning reference, or as a starting point for creating your own apps. The focus of this project is on demonstrating how to structure your code, design your architecture, and the eventual impact of adopting these patterns on testing and maintaining your app. You can use the techniques demonstrated here in many different ways to build apps. Your own particular priorities will impact how you implement the concepts in these projects, so you should not consider these samples to be canonical examples. To ensure the focus in kept on the aims described above, the app uses a simple UI.
+You can use the samples in this project as a learning reference, or as a starting point for creating your own apps. The focus of this project is on demonstrating how to structure your code, design your architecture, and the eventual impact of adopting these patterns on testing and maintaining your app. You can use the techniques demonstrated here in many different ways to build apps. Your own particular priorities will impact how you implement the concepts in these projects, so you should not consider these samples to be canonical examples. To ensure the focus is kept on the aims described above, the app uses a simple UI.
 
 ## Explore the samples
 
@@ -22,6 +22,7 @@ This project hosts each sample app in separate repository branches. For more inf
 | [todo‑mvp‑dagger](https://github.com/googlesamples/android-architecture/tree/todo-mvp-dagger/) | Uses [Dagger2](https://google.github.io/dagger/) to add support for [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection). |
 [todo‑mvp‑contentproviders](https://github.com/googlesamples/android-architecture/tree/todo-mvp-contentproviders/) | Based on the todo-mvp-loaders sample, this version fetches data using the Loaders API, and also makes use of [content providers](https://developer.android.com/guide/topics/providers/content-providers.html). |
 | [todo‑mvp‑rxjava](https://github.com/googlesamples/android-architecture/tree/todo-mvp-rxjava/) | Uses [RxJava](https://github.com/ReactiveX/RxJava) to implement concurrency, and abstract the data layer. |
+| [todo‑mvvm‑databinding](https://github.com/googlesamples/android-architecture/tree/todo-mvvm-databinding/) | Based on the todo-databinding sample, this version incorporates the [Model‑View‑ViewModel](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel) pattern.|
 
 
 ### Samples in progress
@@ -29,7 +30,6 @@ This project hosts each sample app in separate repository branches. For more inf
 | Sample | Description |
 | ------------- | ------------- |
 | [dev‑todo‑mvp‑tablet](https://github.com/googlesamples/android-architecture/tree/dev-todo-mvp-tablet/) | Adds a master and detail view for tablets. |
-| [dev‑todo‑mvvm‑databinding](https://github.com/googlesamples/android-architecture/tree/dev-todo-mvvm-databinding/) | Based on the todo-databinding sample, this version incorporates the [Model‑View‑ViewModel](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel) pattern.|
 | [dev‑todo‑mvvm‑rxjava](https://github.com/googlesamples/android-architecture/tree/dev-todo-mvvm-rxjava/) | Based on the todo-rxjava sample, this version incorporates the [Model‑View‑ViewModel](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel) pattern.|
 
 For information about planned samples, see ["New sample" issues](https://github.com/googlesamples/android-architecture/issues?q=is%3Aissue+is%3Aopen+label%3A%22New+sample%22).
@@ -41,6 +41,9 @@ For information about planned samples, see ["New sample" issues](https://github.
 | ------------- | ------------- |
 | [todo‑mvp‑fragmentless](https://github.com/Syhids/android-architecture/tree/todo-mvp-fragmentless) | Uses [View](https://developer.android.com/reference/android/view/View.html) objects instead of [Fragment](https://developer.android.com/reference/android/app/Fragment.html) objects.|
 | [todo‑mvp‑conductor](https://github.com/grepx/android-architecture/tree/todo-mvp-conductor) | Uses the [Conductor](https://github.com/bluelinelabs/Conductor) framework to refactor the app to use a single Activity architecture. |
+| [todo‑mvp‑kotlin](https://github.com/SerjSmor/android-architecture) | A translation of todo-mvp to [Kotlin](https://kotlinlang.org/) |
+
+
 
 ## Why a to-do app?
 
@@ -57,7 +60,7 @@ Each sample includes a dedicated `README.md` file where you can find related met
 * The size of the app you are developing
 * The size and experience of your team
 * The amount of maintenance that you are expecting to have to do
-* Whether you need a tablet layout 
+* Whether you need a tablet layout
 * Whether you need to support multiple platforms
 * Your preference for the compactness of your codebase
 
@@ -78,7 +81,6 @@ git clone git@github.com:googlesamples/android-architecture.git
 ```
 
 Checkout the todo-mvp sample:
-  
 ```
 git checkout todo-mvp
 ```
@@ -103,16 +105,16 @@ This project is **built by the community**, and curated by Google as well as oth
 
 [Saúl Molinero](https://github.com/saulmm) - Developer (MVP Dagger sample)
 
-[Florina Muntenescu](https://github.com/florina-muntenescu) - Developer (MVP RxJava sample)
-
 ### Googlers
 
 [Jose Alcérreca](http://github.com/JoseAlcerreca) - Lead/Core developer
 
-[Stephan Linzner](http://github.com/slinzner) - Core developer
-
 [Mustafa Kurtuldu](https://github.com/mustafa-x) - UX/design
 
-[Sharif Salah] (https://github.com/sharifsalah) - Technical Writer
+[Stephan Linzner](http://github.com/slinzner) - Core developer
+
+[Florina Muntenescu](https://github.com/florina-muntenescu) - Core developer
+
+[Sharif Salah](https://github.com/sharifsalah) - Technical Writer
 
 For more information on joining the project, see [how to become a contributor](https://github.com/googlesamples/android-architecture/blob/master/CONTRIBUTING.md) and the [contributor's guide](https://github.com/googlesamples/android-architecture/wiki/Contributions)
